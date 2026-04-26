@@ -18,10 +18,10 @@ int main()
     }
 
     for (int i = 0; i < 6; i++) {
-        printf("%d", counts[i]);
+        printf("%d\n", counts[i]);
     }
 
-    printf("%d", summa);
+    printf("%d\n", summa);
 
     printf("%.1f", summa / 100.0);
 
