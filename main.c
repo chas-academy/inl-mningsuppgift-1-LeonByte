@@ -7,7 +7,23 @@ int main()
     srand(1);
 
    
-    // Your code goes here
+    int rolls[100];
+    int counts[6] = {0};
+    int summa = 0;
+
+    for (int i = 0; i < 100; i++){
+        rolls[i] = (rand() % 6) + 1;
+        counts[rolls[i] - 1]++;
+        summa += rolls[i];
+    }
+
+    for (int i = 0; i < 6; i++) {
+        printf("%d", counts[i]);
+    }
+
+    printf("%d", summa);
+
+    printf("%.1f", summa / 100.0);
 
     return 0;
 }
